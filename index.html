@@ -800,39 +800,128 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.118991136005!2d80.1319789!3d12.96134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb78b9379e1%3A0xd6b610599dd5398f!2s9%2C%20Tiruneermalai%20Main%20Rd%2C%20Nagalkeni%2C%20Chromepet%2C%20Chennai%2C%20Tamil%20Nadu%20600044!5e0!3m2!1sen!2sin!4v1693123456789!5m2!1sen!2sin"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+     <section class="contact-section">
 
-          </figure>
-        </section>
+  <h2 class="h2 section-title">Contact Me</h2>
 
-        <section class="contact-form">
+  <div class="contact-container">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3 class="h3">Get In Touch</h3>
+      <p class="contact-text">
+        Feel free to reach out for collaborations, project inquiries, or freelance opportunities.
+      </p>
 
-          <form action="#" class="form" data-form>
+      <ul class="contact-details">
+        <li><strong>Email:</strong> <a href="mailto:yourmail@example.com">yourmail@example.com</a></li>
+        <li><strong>Location:</strong> Chromepet, Chennai, Tamil Nadu, India</li>
+      </ul>
+    </div>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3 class="h3 form-title">Contact Form</h3>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+      <form action="#" class="form" data-form>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <div class="input-wrapper">
+          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-          </form>
+        <button class="form-btn" type="submit" disabled data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
 
-        </section>
+      </form>
+    </div>
+
+  </div>
+
+  <style>
+    .contact-section {
+      padding: 60px 20px;
+      background: #fafafa;
+      border-radius: 12px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info .contact-details li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .form-btn {
+      background-color: #6c63ff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .form-btn[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .form-btn:hover:not([disabled]) {
+      background-color: #5848e2;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</section>
+
 
       </article>
 
